@@ -1,0 +1,47 @@
+.clock {
+  @include meFlex;
+  .clockTime {
+    position: relative;
+
+    @include meFlex;
+    min-width: 12vw;
+    min-height: 12vw;
+    margin: 0 1vw;
+    padding: 12px 8px;
+
+    font-size: 64px;
+
+    border: 2px solid meColor(dark);
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+
+      @include meWidthMax(100%);
+      height: 50%;
+    }
+
+    &:before {
+      top: 0;
+      border-bottom: 1px solid meColor(dark);
+      background-image: linear-gradient(to top, meColor(dark, 0.2), meColor(dark, 0));
+      background-color: meColor(light, 0.02);
+    }
+
+    &:after {
+      top: 50%;
+      border-top: 1px solid meColor(dark);
+      background-image: linear-gradient(to bottom, meColor(dark, 0.3), meColor(dark, 0));
+      background-color: meColor(light, 0.2);
+    }
+
+    span {
+      position: relative;
+      z-index: 1020;
+    }
+  }
+}

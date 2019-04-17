@@ -1,0 +1,14 @@
+.copyright {
+  position: fixed;
+  bottom: 24px;
+  left: 0;
+
+  display: block;
+  @include meWidthMax(100%);
+  text-align: center;
+
+  a {
+    font-style: italic;
+    @include meLink(meColor(text), none, meColor(text), underline);
+  }
+}

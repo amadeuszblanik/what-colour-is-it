@@ -1,0 +1,6 @@
+body {
+  @include meFlex;
+  min-height: 95vh;
+  font-family: msTypeface(mono);
+  font-weight: 500;
+}

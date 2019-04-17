@@ -1,0 +1,22 @@
+/*!
+  Project name: meSass-alpha
+  Author: Amadeusz Blanik (https://blanik.me)
+
+  &copy; 2019 April
+*/
+
+@warn "meSass() :: Start…";
+
+@import "base/index";
+@import "vendors/index";
+
+@import "config/index";
+@import "function/index";
+@import "mixins/index";
+
+@import "utilities/index";
+@import "layouts/index";
+@import "components/index";
+@import "pages/index";
+
+@warn "meSass() :: Successfully compiled…";
